@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('content');
             $table->string('author');
             $table->boolean('published')->default(false);
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }
